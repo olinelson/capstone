@@ -1,0 +1,110 @@
+/* Header section */
+
+header{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+}
+.header-cont{
+  width: 100%;
+  margin: 0 24px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  margin:0;
+  padding:0;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.menubar a{
+  padding: 0 0 0 16px;
+}
+
+/* Learn something section */
+
+.container1{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: grey;
+  display: flex;
+}
+.container1a{
+  margin: 32px 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: ;
+}
+.container1a img{
+  width: 60%;
+  height: 100%;
+}
+
+.container1a .textcont{
+  padding: 0;
+  margin: 0 0 0 24px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+.container1a .textcont .button{
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 8px 0 8px 0;
+}
+.button a:visited, a{
+  color: white;
+}
+
+/* Keep Practicing Section */
+
+.container2{
+  width: 100%;
+  margin: 0;
+  padding:0;
+  background-color: white;
+}
+.container2a{
+  margin: 0;
+  padding:0;
+  display: flex;
+  flex-direction: row;
+
+}
+.container2aleft{
+  width: 60%;
+  margin: 32px 24px;
+}
+.container2aright{
+  width:40%;
+  margin: 32px 0 0 0;
+  padding: 0;
+}
+
+.container2aleft img{
+  width: 100%;
+}
+
+.eventbox{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+.eventbox img{
+  width: 35%;
+  height: auto;
+}
