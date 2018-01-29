@@ -95,6 +95,7 @@ header{
 
 .container2aleft img{
   width: 100%;
+
 }
 
 .eventbox{
@@ -102,9 +103,89 @@ header{
   flex-direction: row;
   width: 100%;
   height: auto;
+  border: 1px solid grey;
+
 }
 
 .eventbox img{
   width: 35%;
+  height: 100%;
+}
+
+/* Start Learning Section */
+
+.container3a h1{
+  width: ;
+  margin: 0 20rem;
+  padding: 32px 0;
+}
+
+.container3{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: grey;
+  padding: 0;
+  margin: 0;
+}
+
+.container3 #startlearning{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin:0;
+}
+
+.coursebox{
+  width: 30%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 0 32px 32px 0;
+
+}
+.coursebox img{
+  width: 100%;
+  height: auto;
+}
+.coursebox h4, h5, p{
+  padding: 0 0 0 16px;
+}
+
+/* Thesis section */
+.container4{
+  width: 100%;
+  margin: 0;
+  padding:0;
+  background-color: white;
+}
+.container4a{
+  margin: 0;
+  padding:0;
+  display: flex;
+  flex-direction: row;
+
+}
+.container4aleft{
+  width: 60%;
+  margin: 32px 24px;
+}
+.container4aright{
+  width:40%;
+  margin: 32px 0 0 0;
+  padding: 0;
+}
+
+.container4aleft video{
+  width: 100%;
+  height: auto;
+
+}
+.container4aleft h4 , p{
+  padding: 0;
+  margin: 0;
 }
