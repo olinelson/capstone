@@ -26,8 +26,33 @@ header{
 
 }
 
+.menubar{
+  z-index: 100;
+
+}
+
 .menubar a{
   padding: 0 0 0 16px;
+  color: grey;
+  text-decoration: none;
+
+}
+
+.mobileicons{
+  display:none;
+}
+
+@media screen and (max-width:480px){
+
+  .menubar{
+    display: none;
+  }
+  .logo h1{
+    display: none;
+  }
+  .mobileicons{
+    display: inline-block;
+  }
 }
 
 /* Learn something section */
@@ -66,6 +91,56 @@ header{
 }
 .button a:visited, a{
   color: white;
+}
+
+
+/* Learn Something - >480px mobile */
+
+
+@media screen and (max-width:480px){
+  .container1{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+  }
+  .container1a{
+    margin: 0 0;
+    padding: 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+  }
+  .container1a img{
+    width: 100%;
+    height: auto;
+  }
+
+  .container1a .textcont{
+    padding: 0;
+    margin: 32px 16px;
+    align-self: left;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .container1a .textcont .button{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 8px 0 8px 0;
+  }
+  .button a:visited, a{
+    color: white;
+    text-decoration: none;
+  }
+  .container1a .button{
+    margin: 24px 0 32px 0;
+
+  }
+
 }
 
 /* Keep Practicing Section */
@@ -112,6 +187,85 @@ header{
   height: 100%;
 }
 
+.eventbox .mobileimg{
+  display: none;
+}
+.textbox a{
+  color: blue;
+
+}
+
+/* Keep Practicing >480px mobile */
+
+@media screen and (max-width: 480px){
+
+  .container2aleft{
+    display: none;
+  }
+
+  .container2{
+    width: 100%;
+    margin: 0;
+    padding:0;
+    background-color: white;
+  }
+  .container2a{
+    margin: 0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .container2aright .textbox{
+    text-align: left;
+    width: 100%;
+
+  }
+
+
+
+
+  .container2aright{
+    width:100%;
+    margin: 16px 16px 64px 16px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container2aleft img{
+    width: 100%;
+
+
+  }
+
+  .eventbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border: none;
+    margin: 16px 16px 64px 16px;
+
+  }
+
+  .eventbox img{
+    width: 100%;
+    height: auto;
+  }
+
+  .eventbox .mobileimg{
+    display: block;
+  }
+  .eventbox .desktopimg{
+    display: none;
+  }
+}
+
+
 /* Start Learning Section */
 
 .container3a h1{
@@ -154,7 +308,42 @@ header{
 }
 .coursebox h4, h5, p{
   padding: 0 0 0 16px;
+
 }
+.coursebox p{
+  padding: 0 0 0 16px;
+}
+
+/* Start Learning >480px mobile */
+@media screen and (max-width:480px){
+  .container3 .coursebox .desktop{
+    display: none;
+  }
+
+  .container3 .coursebox{
+    background-color: grey;
+    width: 100%;
+    margin: 16px 8px 8px 8px;
+    padding: 0;
+
+  }
+  .container3 .coursebox img{
+    display: none;
+  }
+
+  .container3{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+}
+
 
 /* Thesis section */
 .container4{
@@ -162,6 +351,7 @@ header{
   margin: 0;
   padding:0;
   background-color: white;
+  display: block;
 }
 .container4a{
   margin: 0;
@@ -170,6 +360,12 @@ header{
   flex-direction: row;
 
 }
+.container4 h2{
+  width: 100%;
+  text-align: center;
+
+}
+
 .container4aleft{
   width: 60%;
   margin: 32px 24px;
@@ -188,4 +384,33 @@ header{
 .container4aleft h4 , p{
   padding: 0;
   margin: 0;
+}
+
+/* Thesis mobile section */
+@media screen and (max-width: 480px){
+  .container4aright{
+    display: none;
+  }
+
+  .container4aleft{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+  }
+  .container4{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .container4aleft video{
+    width: 100;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .container4aleft h4 , p{
+    display: none;
+  }
 }
