@@ -1,3 +1,9 @@
+html{
+  font-family: 'Josefin Sans', sans-serif;
+  color: #4a4a4a;
+}
+
+
 /* Header section */
 
 header{
@@ -31,9 +37,22 @@ header{
 
 }
 
+.logo #colmar{
+  margin: 0 0 0 4px;
+  padding: 0;
+  color: #4a4a4a;
+}
+
+.logo #academy{
+  margin:0;
+  padding:0;
+  text-align: left;
+  color: #9b9b9b;
+}
+
 .menubar a{
   padding: 0 0 0 16px;
-  color: grey;
+  color: #4a4a4a;
   text-decoration: none;
 
 }
@@ -61,14 +80,14 @@ header{
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: grey;
+  background-color: #d8d8d8;
   display: flex;
 }
 .container1a{
   margin: 32px 24px;
   display: flex;
   flex-direction: row;
-  justify-content: ;
+  justify-content:;
 }
 .container1a img{
   width: 60%;
@@ -81,16 +100,36 @@ header{
   align-self: center;
   display: flex;
   flex-direction: column;
+  width: 30%;
+
 }
+.container1a .textcont h1, p{
+  color: #4a4a4a;
+
+}
+.container1a .textcont h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.container1a .textcont p{
+  font-size: 1.5rem;
+  margin: 0 0 15% 0;
+}
+
 .container1a .textcont .button{
   width: 100%;
-  background-color: black;
+  background-color: #4a4a4a;
   display: flex;
   justify-content: center;
   padding: 8px 0 8px 0;
 }
-.button a:visited, a{
+ .button a:visited, .button a{
   color: white;
+  text-decoration: none;
+  padding: 8px 0;
+  font-size: 1.2rem;
+
 }
 
 
@@ -166,10 +205,14 @@ header{
   width:40%;
   margin: 32px 0 0 0;
   padding: 0;
+  border-left:1px solid #e0e2e2;
 }
+
+
 
 .container2aleft img{
   width: 100%;
+
 
 }
 
@@ -178,7 +221,12 @@ header{
   flex-direction: row;
   width: 100%;
   height: auto;
-  border: 1px solid grey;
+  border-bottom: 1px solid #e0e2e2;
+  padding: 16px;
+
+
+
+
 
 }
 
