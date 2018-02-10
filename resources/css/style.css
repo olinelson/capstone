@@ -1,6 +1,12 @@
 html{
   font-family: 'Josefin Sans', sans-serif;
   color: #4a4a4a;
+
+}
+
+a:link{
+
+  color: #7c7c7c;
 }
 
 
@@ -80,7 +86,7 @@ header{
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: #d8d8d8;
+  background-color: #dbdbdb;
   display: flex;
 }
 .container1a{
@@ -119,7 +125,7 @@ header{
 
 .container1a .textcont .button{
   width: 100%;
-  background-color: #4a4a4a;
+  background-color: #9b9b9b;
   display: flex;
   justify-content: center;
   padding: 8px 0 8px 0;
@@ -141,9 +147,13 @@ header{
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: grey;
     display: flex;
   }
+
+  .container1a .textcont{
+    width: 100%;
+  }
+
   .container1a{
     margin: 0 0;
     padding: 0 0;
@@ -165,8 +175,7 @@ header{
 
   }
   .container1a .textcont .button{
-    width: 100%;
-    background-color: black;
+    width: 90%;
     display: flex;
     justify-content: center;
     padding: 8px 0 8px 0;
@@ -189,6 +198,9 @@ header{
   margin: 0;
   padding:0;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+
 }
 .container2a{
   margin: 0;
@@ -222,7 +234,7 @@ header{
   width: 100%;
   height: auto;
   border-bottom: 1px solid #e0e2e2;
-  padding: 16px;
+  padding: 0;
 
 
 
@@ -233,6 +245,8 @@ header{
 .eventbox img{
   width: 35%;
   height: 100%;
+  padding:0;
+  margin: 16px;
 }
 
 .eventbox .mobileimg{
@@ -320,6 +334,7 @@ header{
   width: ;
   margin: 0 20rem;
   padding: 32px 0;
+  font-weight: bold;
 }
 
 .container3{
@@ -328,7 +343,7 @@ header{
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: grey;
+  background-color: #eaebec;
   padding: 0;
   margin: 0;
 }
@@ -339,6 +354,7 @@ header{
   justify-content: center;
   padding: 0;
   margin:0;
+  font-weight: bold;
 }
 
 .coursebox{
@@ -348,19 +364,36 @@ header{
   flex-direction: column;
   background-color: white;
   margin: 0 32px 32px 0;
+  padding-bottom: 24px;
 
 }
 .coursebox img{
   width: 100%;
   height: auto;
 }
-.coursebox h4, h5, p{
-  padding: 0 0 0 16px;
 
+
+.coursebox h4{
+  margin: 16px 0 0 16px;
+  font-size: 1.5rem;
 }
+
+.coursebox h5{
+  margin: 8px 0 0 16px;
+}
+
 .coursebox p{
-  padding: 0 0 0 16px;
+  margin: 8px 0 0 16px;
 }
+
+.coursebox h5 , .coursebox p{
+  font-size: 1rem;
+  color: #7c7c7c ;
+}
+
+
+
+
 
 /* Start Learning >480px mobile */
 @media screen and (max-width:480px){
@@ -411,6 +444,8 @@ header{
 .container4 h2{
   width: 100%;
   text-align: center;
+  margin: 32px 0;
+  font-size: 2rem;
 
 }
 
@@ -420,19 +455,49 @@ header{
 }
 .container4aright{
   width:40%;
-  margin: 32px 0 0 0;
+  margin: 15px 0 0 0;
   padding: 0;
 }
 
 .container4aleft video{
   width: 100%;
   height: auto;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 
 }
 .container4aleft h4 , p{
   padding: 0;
   margin: 0;
 }
+.container4aleft h4{
+  font-size: 1.15rem;
+  margin: 24px 0 8px 0;
+}
+.container4aleft p{
+  color: #7c7c7c;
+  margin: 0 0 32px 0;
+
+}
+
+.container4aright .eventbox{
+  padding-bottom: 1.08px;
+}
+
+.container4aright .textbox h4{
+  font-size: 1.25rem;
+
+}
+.container4aright .textbox p{
+  color: #7c7c7c;
+}
+
+.container4aright .textbox a{
+  color: #7c7c7c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 
 /* Thesis mobile section */
 @media screen and (max-width: 480px){
