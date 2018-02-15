@@ -1,6 +1,8 @@
 html{
-  font-family: 'Roboto Slab', serif;
-  color: #728CA3;
+  font-family: 'Rubik', sans-serif;
+
+
+
 
 }
 
@@ -13,7 +15,7 @@ body{
 
 /* Page theme */
 body{
-  background-image:url(../images/zig-zag-wool.png);
+background-color: #e8edf3;
 }
 
 
@@ -22,29 +24,29 @@ body{
 }
 
 
-}
 
- h2 , h3 , h4 , h5 {
 
-}
 
-h1{
-  color: #e85a4f;
+.container1 h1{
+  color: #e6cf8b;
+  font-weight: bold;
+  font-size: 2.5rem;
+
 }
 
 p{
-  color: #8E8D8A;
+  color: ;
 }
 
 #colmar{
-  color: white;
+  color: #22264b;
 }
 #academy{
-  color: #D83F87;
+  color: #b56969;
 }
 
 header a{
-  color: #b56969;
+  color: #22264b;
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -56,10 +58,14 @@ header a{
   color: #e8edf3;
 }
 
-a:link{
-
-  color: #7c7c7c;
+.container2 h1 , .container2 h4{
+  color: #b56969;
 }
+
+.container2 h4{
+  font-size: 1.3rem;
+}
+
 
 /* Header section */
 
