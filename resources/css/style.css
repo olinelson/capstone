@@ -4,7 +4,11 @@ html{
 
 
 
+
+
+
 }
+
 
 body{
   margin: 0;
@@ -16,10 +20,40 @@ body{
 /* Page theme */
 body{
 background-color: #e8edf3;
+color: #22264b;
+}
+a{
+  color:#22264b;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:active, a:after{
+  color: #b56969;
+
 }
 
 
-.container1 , .container2 , .container3 , .container4 , header{
+h1{
+  font-size: 2.5rem;
+
+}
+h2{
+  font-size: 2rem;
+}
+
+h3{
+
+}
+h4{
+  font-size: 1.4rem;
+
+}
+h5{
+  font-size: 1.1rem;
+}
+p{
+  font-size:1rem;
+  font-family: 'Proza Libre', serif;
 
 }
 
@@ -30,7 +64,6 @@ background-color: #e8edf3;
 .container1 h1{
   color: #e6cf8b;
   font-weight: bold;
-  font-size: 2.5rem;
 
 }
 
@@ -58,12 +91,48 @@ header a{
   color: #e8edf3;
 }
 
-.container2 h1 , .container2 h4{
-  color: #b56969;
+.container2 h1 {
+  color: #e6cf8b;
 }
 
 .container2 h4{
-  font-size: 1.3rem;
+  color: #22264b;
+
+}
+.container2 h1{
+  font-size: 2.5rem;
+}
+
+.container3 h1{
+  color: #b56969;
+
+}
+
+
+.coursebox p{
+  color: #22264b;
+}
+
+.coursebox h4{
+  color: #22264b;
+}
+.coursebox h5{
+  color: #22264b;
+  font-weight: bold;
+
+}
+
+.container4 h2{
+  color:#e6cf8b;
+}
+
+.container4 h1{
+  color: #b56969;
+}
+.container4aleft h1{
+  color: #e6cf8b;
+
+
 }
 
 
@@ -133,6 +202,12 @@ header{
   }
   .mobileicons{
     display: inline-block;
+  }
+  .mobileicons img:active{
+    opacity: 0.5;
+  }
+  .logo img:active{
+    opacity: 0.5;
   }
 }
 
@@ -268,15 +343,17 @@ header{
 }
 .container2aright{
   width:40%;
-  margin: 32px 0 0 0;
+  margin: 1rem 0 0 0;
   padding: 0;
-  border-left:1px solid #e0e2e2;
+
 }
 
 
 
 .container2aleft img{
   width: 100%;
+  margin: 0;
+  padding: 0;
 
 
 }
@@ -286,7 +363,7 @@ header{
   flex-direction: row;
   width: 100%;
   height: auto;
-  border-bottom: 1px solid #e0e2e2;
+  margin:0;
   padding: 0;
 
 
@@ -413,35 +490,26 @@ header{
   width: 30%;
   height: auto;
   display: flex;
+  text-align: left;
   flex-direction: column;
-  background-color: white;
-  margin: 0 32px 32px 0;
+  margin: 0 20px 20px 20px;
   padding-bottom: 24px;
 
 }
 .coursebox img{
   width: 100%;
   height: auto;
+
+}
+.coursebox h4 , h5 , p{
+  padding: 0;
+  margin: 0.5rem 0;
+
 }
 
 
-.coursebox h4{
-  margin: 16px 0 0 16px;
-  font-size: 1.5rem;
-}
 
-.coursebox h5{
-  margin: 8px 0 0 16px;
-}
 
-.coursebox p{
-  margin: 8px 0 0 16px;
-}
-
-.coursebox h5 , .coursebox p{
-  font-size: 1rem;
-
-}
 
 
 
@@ -496,8 +564,14 @@ header{
   width: 100%;
   text-align: center;
   margin: 32px 0;
-  font-size: 2rem;
 
+
+}
+
+.container4aleft h1{
+  width: 100%;
+  text-align: left;
+  margin: 32px 0;
 }
 
 .container4aleft{
@@ -517,12 +591,12 @@ header{
   padding: 0 0 0 0;
 
 }
-.container4aleft h4 , p{
+.container4aleft h1 , p{
   padding: 0;
   margin: 0;
 }
-.container4aleft h4{
-  font-size: 1.15rem;
+.container4aleft h1{
+
   margin: 24px 0 8px 0;
 }
 .container4aleft p{
@@ -536,7 +610,7 @@ header{
 }
 
 .container4aright .textbox h4{
-  font-size: 1.25rem;
+
 
 }
 .container4aright .textbox p{
