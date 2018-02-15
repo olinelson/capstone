@@ -1,14 +1,65 @@
 html{
-  font-family: 'Josefin Sans', sans-serif;
-  color: #4a4a4a;
+  font-family: 'Roboto Slab', serif;
+  color: #728CA3;
 
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Page theme */
+body{
+  background-image:url(../images/zig-zag-wool.png);
+}
+
+
+.container1 , .container2 , .container3 , .container4 , header{
+
+}
+
+
+}
+
+ h2 , h3 , h4 , h5 {
+
+}
+
+h1{
+  color: #e85a4f;
+}
+
+p{
+  color: #8E8D8A;
+}
+
+#colmar{
+  color: white;
+}
+#academy{
+  color: #D83F87;
+}
+
+header a{
+  color: #b56969;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.button{
+  background-color: #22264b;
+}
+.button a{
+  color: #e8edf3;
 }
 
 a:link{
 
   color: #7c7c7c;
 }
-
 
 /* Header section */
 
@@ -46,19 +97,18 @@ header{
 .logo #colmar{
   margin: 0 0 0 4px;
   padding: 0;
-  color: #4a4a4a;
+
 }
 
 .logo #academy{
   margin:0;
   padding:0;
   text-align: left;
-  color: #9b9b9b;
+
 }
 
 .menubar a{
   padding: 0 0 0 16px;
-  color: #4a4a4a;
   text-decoration: none;
 
 }
@@ -86,7 +136,6 @@ header{
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: #dbdbdb;
   display: flex;
 }
 .container1a{
@@ -109,8 +158,7 @@ header{
   width: 30%;
 
 }
-.container1a .textcont h1, p{
-  color: #4a4a4a;
+
 
 }
 .container1a .textcont h1{
@@ -125,13 +173,13 @@ header{
 
 .container1a .textcont .button{
   width: 100%;
-  background-color: #9b9b9b;
+
   display: flex;
   justify-content: center;
   padding: 8px 0 8px 0;
 }
  .button a:visited, .button a{
-  color: white;
+
   text-decoration: none;
   padding: 8px 0;
   font-size: 1.2rem;
@@ -181,7 +229,7 @@ header{
     padding: 8px 0 8px 0;
   }
   .button a:visited, a{
-    color: white;
+
     text-decoration: none;
   }
   .container1a .button{
@@ -197,7 +245,6 @@ header{
   width: 100%;
   margin: 0;
   padding:0;
-  background-color: white;
   display: flex;
   flex-direction: column;
 
@@ -253,7 +300,7 @@ header{
   display: none;
 }
 .textbox a{
-  color: blue;
+
 
 }
 
@@ -343,7 +390,6 @@ header{
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #eaebec;
   padding: 0;
   margin: 0;
 }
@@ -388,7 +434,7 @@ header{
 
 .coursebox h5 , .coursebox p{
   font-size: 1rem;
-  color: #7c7c7c ;
+
 }
 
 
@@ -431,7 +477,6 @@ header{
   width: 100%;
   margin: 0;
   padding:0;
-  background-color: white;
   display: block;
 }
 .container4a{
@@ -441,7 +486,7 @@ header{
   flex-direction: row;
 
 }
-.container4 h2{
+.container4 h1{
   width: 100%;
   text-align: center;
   margin: 32px 0;
@@ -475,7 +520,7 @@ header{
   margin: 24px 0 8px 0;
 }
 .container4aleft p{
-  color: #7c7c7c;
+
   margin: 0 0 32px 0;
 
 }
@@ -489,11 +534,11 @@ header{
 
 }
 .container4aright .textbox p{
-  color: #7c7c7c;
+
 }
 
 .container4aright .textbox a{
-  color: #7c7c7c;
+
   font-weight: bold;
   text-decoration: none;
 }
