@@ -15,8 +15,6 @@ body{
 }
 #sitecont{
   max-width: 1000px;
-
-
 }
 
 
@@ -91,6 +89,8 @@ header{
   align-items: center;
   justify-content: space-between;
 }
+
+
 
 .logo{
   margin:0;
@@ -189,39 +189,43 @@ header{
   margin: 5rem 0 0 0;
   padding: 0;
   width: 100%;
+  height: 40rem;
   display: flex;
   justify-content: center;
 }
 .container1a{
-  margin: 32px 24px;
+  margin: 0;
   display: flex;
   flex-direction: row;
-  justify-content:;
+  justify-content:center;
 }
-.container1a img{
-  width: 50%;
+.container1 .bannerimg{
+  background-image: url(../images/banner.jpg);
+  width: 200%;
   height: auto;
-  max-height: 500px;
-  flex-shrink: 4;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: visible;
+  margin-left: 0;
+  margin-right: 0;
+
 
 
 }
 
 .container1a .textcont{
   padding: 0;
-  margin: 0 0 0 2.5rem;
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  overflow: hidden;
-
-}
+  margin: 0 130% 0 0;
 
 }
 .container1a .textcont h1{
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
+  overflow: visible;
+  text-align: left;
+  width: 200%;
+  margin: 0 0 2rem -60%;
+  padding: 0;
 }
 
 .container1a .textcont p{
@@ -241,7 +245,6 @@ header{
   text-decoration: none;
   padding: 8px 0;
   font-size: 1.2rem;
-
 }
 
 .button{
@@ -317,7 +320,7 @@ header{
 
 .container2{
   width: 100%;
-  margin: 0;
+  margin: 5rem 0 0 0;
   padding:0;
   display: flex;
   flex-direction: column;
@@ -328,6 +331,7 @@ header{
   padding:0;
   display: flex;
   flex-direction: row;
+
 
 }
 .container2aleft{
@@ -467,7 +471,7 @@ header{
 .container3a h1{
   width: ;
   margin: 0 20rem;
-  padding: 32px 0;
+  padding: 2rem 0;
   font-weight: bold;
 }
 
@@ -478,7 +482,7 @@ header{
   flex-wrap: wrap;
   justify-content: center;
   padding: 0;
-  margin: 0;
+  margin: 5rem 0 0 0;
 }
 
 .container3 #startlearning{
@@ -491,7 +495,7 @@ header{
 }
 
 .coursebox{
-  width: 30%;
+  width: 29%;
   height: auto;
   display: flex;
   text-align: left;
@@ -509,6 +513,10 @@ header{
   padding: 0;
   margin: 0.5rem 0;
 
+}
+#startlearning{
+  display: flex;
+  align-items: flex-start;
 }
 
 
@@ -553,7 +561,7 @@ header{
 /* Thesis section */
 .container4{
   width: 100%;
-  margin: 0;
+  margin: 5rem 0 0 0;
   padding:0;
   display: block;
 }
@@ -567,7 +575,7 @@ header{
 .container4 h1{
   width: 100%;
   text-align: center;
-  margin: 32px 0;
+  margin: 2rem 0;
 
 
 }
