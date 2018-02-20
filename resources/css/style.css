@@ -52,16 +52,17 @@ h2{
 }
 
 h3{
+  color: #8E8d8A;
 
 }
 h4{
   font-size: 1.4rem;
-  color: #e98074;
+  color: #8e8d8a;
 
 }
 h5{
   font-size: 1.1rem;
-  color: #e98074;
+  color: #8E8d8A;
 }
 p{
   font-size:1rem;
@@ -188,36 +189,32 @@ header{
     height: 100%;
     justify-content: center;
   }
-  .mobileicons img:active {
-    width: 10rem;
 
-
-  }
 
   .mobileicons img{
-    height:auto;
-    width: 50%;
+    height: 3rem;
+
+
 
   }
   .logo{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    width: 25%;
+    display: none;
 
   }
 
-  .logo img{
-    height: auto;
-    width: 50%;
-    padding: 0;
-    margin:0;
+
 
   }
   .header-cont{
     display: flex;
     align-content: center;
+    position: fixed;
+    z-index: 500;
+    background-color: #eae7dd;
+    margin: -2rem 0;
+    padding: 0.5rem 0 0 0;
   }
+
 
 }
 
@@ -324,7 +321,7 @@ header{
 
 @media screen and (max-width:480px){
   .container1{
-    margin: 0;
+    margin: -2.5rem 0 0 0 ;
     padding: 0;
     width: 100%;
     height: auto;
@@ -335,27 +332,37 @@ header{
 
   .container1a .textcont{
     width: 100%;
+
   }
 
   .container1a{
     width: 100%;
-    margin: 0 1rem;
+    height: 10rem;
+    z-index: 100;
+    padding: 2rem 0 0 0;
+
+
+
   }
   .container1 .bannerimg{
     width: 100%;
     height: 24rem;
     margin: 0;
     padding: 0;
+    z-index: 50;
+    position: absolute;
   }
 
   .container1a .textcont{
-    width: 100%;
+    width: 90%;
     height: auto;
     padding: 0;
-    margin: 0;
+    margin: 0 0.5rem;
     align-self: left;
     display: flex;
     flex-direction: column;
+
+
 
   }
   .container1a .textcont .button{
@@ -369,11 +376,19 @@ header{
     text-decoration: none;
   }
   .container1a .button{
-    margin: 24px 0 32px 0;
+    margin: 0;
+
+
 
   }
-  .container1a h1{
-    font-size: 2rem;
+  .container1a .textcont h2{
+    font-size: 3rem;
+    padding: 0 0 0 0;
+    margin: 2rem 0 0 0;
+    color: #e98074;
+    background-color: rgba(35 , 39 , 72 , 0.6);
+
+
   }
 
 }
@@ -457,8 +472,9 @@ header{
 
   .container2{
     width: 100%;
-    margin: 0;
-    padding:0;
+    margin: 8rem 0 0 0;
+    padding: 0;
+
 
   }
   .container2a{
@@ -468,19 +484,21 @@ header{
     flex-direction: column;
     align-items: center;
 
+
   }
   .container2aright .textbox{
     text-align: center;
     align-content: center;
     justify-content: center;
-    width: 100%;
-    background-color: #22264b;
+    width: 80%;
+    background-color: rgba(35 , 39 , 72 , 0.8);
+    padding: 8px 0 8px 0;
 
 
 
   }
   .container2aright .textbox h4{
-      color:#e8edf3;
+      color: #e98074;
       font-size: 1.2rem;
       padding: 0;
       margin: 0;
@@ -500,6 +518,7 @@ header{
 
   .container2aleft img{
     width: 100%;
+
 
 
   }
@@ -599,10 +618,10 @@ header{
   }
 
   .container3 .coursebox{
-    background-color: grey;
-    width: 100%;
-    margin: 16px 8px 8px 8px;
-    padding: 0;
+    background-color: #d8c3a5;
+    width: 90%;
+    margin: 1rem 1rem 0 1rem;
+    padding: 0 0 0 1rem;
 
   }
   .container3 .coursebox img{
@@ -610,7 +629,6 @@ header{
   }
 
   .container3{
-    background-color: white;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -721,12 +739,12 @@ header{
 
   }
   .container4aleft video{
-    width: 100;
+    width: 100%;
     height: auto;
     padding: 0;
     margin: 0;
   }
-  .container4aleft h4 , p{
+  .container4aleft h4 , {
     display: none;
   }
 }
