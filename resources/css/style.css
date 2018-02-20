@@ -97,6 +97,7 @@ header{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  position: static;
 
 }
 
@@ -204,7 +205,7 @@ header{
 
 
 
-  }
+
   .header-cont{
     display: flex;
     align-content: center;
@@ -214,9 +215,10 @@ header{
     margin: -2rem 0;
     padding: 0.5rem 0 0 0;
   }
-
-
 }
+
+
+
 
 /* Learn something section */
 
@@ -315,83 +317,53 @@ header{
   transition: color 0.5s ease-out;
 }
 
+/* Learn Something >1130px */
+
+@media screen and (max-width: 1130px){
+   .container1a{
+     padding: 0;
+     margin: 0;
+   }
+   .container1{
+     align-items: flex-start;
+   }
+}
+
+/* learn something >900px */
+@media screen and (max-width: 900px) {
+  .container1{
+    flex-direction: column;
+    background-image: url(../images/banner.jpg);
+    background-size: fill;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 2rem;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .container1 .bannerimg{
+    display: none;
+  }
+  .container1a{
+    width: 70%;
+    margin: 0 0 5% 5%;
+
+  }
+  .container1a .textcont{
+    background-color: rgba(40,44,52,0.5);
+    padding: 0.5rem;
+  }
+}
+
+
 
 /* Learn Something - >480px mobile */
 
 
-@media screen and (max-width:480px){
-  .container1{
-    margin: -2.5rem 0 0 0 ;
-    padding: 0;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-  }
-
-  .container1a .textcont{
-    width: 100%;
-
-  }
-
-  .container1a{
-    width: 100%;
-    height: 10rem;
-    z-index: 100;
-    padding: 2rem 0 0 0;
 
 
-
-  }
-  .container1 .bannerimg{
-    width: 100%;
-    height: 24rem;
-    margin: 0;
-    padding: 0;
-    z-index: 50;
-    position: absolute;
-  }
-
-  .container1a .textcont{
-    width: 90%;
-    height: auto;
-    padding: 0;
-    margin: 0 0.5rem;
-    align-self: left;
-    display: flex;
-    flex-direction: column;
-
-
-
-  }
-  .container1a .textcont .button{
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    padding: 8px 0 8px 0;
-  }
-  .button a:visited, a{
-
-    text-decoration: none;
-  }
-  .container1a .button{
-    margin: 0;
-
-
-
-  }
-  .container1a .textcont h2{
-    font-size: 3rem;
-    padding: 0 0 0 0;
-    margin: 2rem 0 0 0;
-    color: #e98074;
-    background-color: rgba(35 , 39 , 72 , 0.6);
-
-
-  }
-
-}
 
 /* Keep Practicing Section */
 
@@ -483,8 +455,10 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
 
-
+  .container2a p{
+    display: none;
   }
   .container2aright .textbox{
     text-align: center;
@@ -621,9 +595,15 @@ header{
     background-color: #d8c3a5;
     width: 90%;
     margin: 1rem 1rem 0 1rem;
-    padding: 0 0 0 1rem;
+    padding: 0 0 0 0;
 
   }
+
+  .container3 .coursebox h4{
+    margin-left:1rem;
+  }
+
+
   .container3 .coursebox img{
     display: none;
   }
@@ -719,6 +699,15 @@ header{
   text-decoration: none;
 }
 
+footer{
+  width: 100%;
+  max-width: 1000px;
+
+}
+footer p{
+  margin-left: 1.5rem;
+}
+
 
 /* Thesis mobile section */
 @media screen and (max-width: 480px){
@@ -736,6 +725,7 @@ header{
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding: 0 0 2rem 0;
 
   }
   .container4aleft video{
@@ -744,7 +734,11 @@ header{
     padding: 0;
     margin: 0;
   }
-  .container4aleft h4 , {
+  .container4aleft p , .container4aleft h2 {
     display: none;
   }
+  footer{
+    margin: 0 0 2rem 0;
+  }
+
 }
