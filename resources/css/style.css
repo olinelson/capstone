@@ -1,744 +1,137 @@
+/* page setup */
 html{
-  font-family: 'Comfortaa', cursive;
-  color: #8E8D8A;
+  font-size: 12px;
 }
 
-
-body{
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-
-}
-#sitecont{
-  max-width: 1300px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-
+h1 , h2 , h3 , h4 , h5 , h6 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 3rem;
 }
 
-
-
-/* Page theme... font sizing and color */
-body{
-background-color: #EAE7DC;
-
-
-}
-a{
-  color:#8E8D8A;
-  text-decoration: none;
-  font-weight: bold;
-}
-a:active, a:after{
-  color: #E85A4F;
-}
-
-
-h1{
-  font-size: 2.5rem;
-  color: #E85A4F;
-}
-h2{
-  font-size: 2.5rem;
-  color: #e98074;
-}
-
-h3{
-  color: #8E8d8A;
-
-}
-h4{
-  font-size: 1.4rem;
-  color: #8e8d8a;
-
-}
-h5{
-  font-size: 1.1rem;
-  color: #8E8d8A;
-}
 p{
-  font-size:1rem;
-  color: #8E8d8A;
-
+font-family: 'Quattrocento', serif;
+font-size: 1.5rem;
 }
 
-a{
-  color: #8e8d8a;
-  font-weight: bold;
-  font-size: 1.2rem;
+a , a:active , a::after {
+  font-family: 'Quattrocento', serif;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+/* DESKTOP SITE */
+
+.mobileimg , .menubar-mobile{
+  display: none;
 }
 
 
-/* Header section */
+
+/* header */
 
 header{
   width: 100%;
-  max-width: 1000px;
-  margin: 0;
-  padding: 2rem 0 0 0;
-  height: 64px;
+  height: auto;
   display: flex;
   justify-content: center;
-
 }
-.header-cont{
+.header-container{
   width: 100%;
-  margin: 0;
-  padding: 0;
+  max-width: 1250px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  position: static;
-
+  overflow: hidden;
 }
 
-
-
-.logo{
-  margin:0;
-  padding:0;
+.header-container .logo{
   display: flex;
-  flex-direction: row;
+  flex-shrink: 2;
+  margin: 1rem;
 
 }
-
-.menubar{
-  z-index: 100;
-  display: flex;
+.header-container .logo img{
+  width: 4rem;
   height: auto;
-  align-items: center;
 
-
-
-
-
-}
-
-.logo img{
-  width: auto;
-  height: 5rem;
-  margin: 1.3rem 1rem 0.5rem 0;
-
-}
-
-.logo{
-  display: flex;
-  align-items: center;
-}
-
-.logo #colmar{
-  margin: 0 0 0 0;
-  padding: 1rem 0 0 0;
-  color: #E85A4F;
-  font-family: 'Raleway', sans-serif;
-  font-size: 3rem;
-
-}
-
-.logo #academy{
-  margin:0 0 0 0;
-  padding:0 0 0.5rem 0;
-  color: #E85A4F;
-  font-family: 'Raleway', sans-serif;
-  font-size: 3rem;
-}
-
-.menubar a{
-  padding:  ;
   margin: 0.5rem;
-  text-decoration: none;
 }
-.menubar a:hover{
-  color: #e98074;
-  font-size: 1.3rem;
-  transition: color 0.5s ease-out;
-  transition: font-size 0.5s ease-out;
-
-}
-
-
-
-
-
-
-
-.mobileicons{
-  display:none;
-}
-
-@media screen and (max-width:480px){
-
-  .menubar{
-    display: none;
-  }
-  .logo h1{
-    display: none;
-  }
-  .mobileicons{
-    display: flex;
-    width: 25%;
-    height: auto;
-    height: 100%;
-    justify-content: center;
-  }
-
-
-  .mobileicons img{
-    height: 3rem;
-
-
-
-  }
-  .logo{
-    display: none;
-
-  }
-
-
-
-
-  .header-cont{
-    display: flex;
-    align-content: center;
-    position: fixed;
-    z-index: 500;
-    background-color: #eae7dd;
-    margin: -2rem 0;
-    padding: 0.5rem 0 0 0;
-  }
-}
-
-
-
-
-/* Learn something section */
-
-.container1{
-  margin: 0 0 0 0;
-  padding: 4rem 0 0 0;
-  width: 100%;
-  max-width: 2000px;
-
-  height: 40rem;
+.header-container .menubar{
+  width: 40%;
   display: flex;
-
-  align-items: center;
+  flex-shrink: 1;
   justify-content: space-between;
-
-
-
-
+  overflow: hidden;
 
 }
-.container1a{
-  padding: 0 1rem 0 0;
-  margin: 0;
-  width: 37%;
-
-
+.header-container .menubar a{
+  margin: 1rem;
+  white-space: nowrap;
 
 }
-.container1 .bannerimg{
+
+/* Learn something */
+.container1{
+  margin: 1rem 0 2rem 0;
+  display: flex;
+  flex-direction: row;
+  max-width:1250px;
+  width: 100%;
+  height: 40rem;
+}
+.container1 .featurebox{
+  width: 60%;
   background-image: url(../images/banner.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 57%;
-  height:100% ;
-  max-height: 100%;
-  margin-left: 1rem;
-
-
-
-
-
-
-
+  flex-shrink:2;
 }
-
-.container1a .textcont{
-
-  width: 100%;
-
-
-
-
-
-}
-.container1a .textconta{
-
-  width: 60%;
-}
-
-.container1a .textcont h2{
-  font-size: 3.3rem;
-  padding: 0;
-  margin: 0;
-
-
-}
-
-.container1a .textconta p{
-
-}
-
-.container1a .textconta .button{
-  width: 100%;
-  margin: 2rem 0 0 0 ;
-  display: flex;
-  justify-content: center;
-  padding: 8px 0 8px 0;
-}
- .button a:visited, .button a{
-
-  text-decoration: none;
-  padding: 8px 0;
-  font-size: 1.2rem;
-}
-
-.button{
-  background-color: #d8cea5;
-}
-.button:hover{
-  background-color: #8e8d8a;
-  transition: background-color 0.5s ease-out;
-
-}
-.button:hover a{
-  color:#d8c3a5;
-  transition: color 0.5s ease-out;
-}
-
-/* Learn Something >1130px */
-
-@media screen and (max-width: 1130px){
-   .container1a{
-     padding: 0;
-     margin: 0;
-   }
-   .container1{
-     align-items: flex-start;
-   }
-}
-
-/* learn something >900px */
-@media screen and (max-width: 900px) {
-  .container1{
-    flex-direction: column;
-    background-image: url(../images/banner.jpg);
-    background-size: fill;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-top: 2rem;
-    justify-content: flex-end;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
-  .container1 .bannerimg{
-    display: none;
-  }
-  .container1a{
-    width: 70%;
-    margin: 0 0 5% 5%;
-
-  }
-  .container1a .textcont{
-    background-color: rgba(40,44,52,0.5);
-    padding: 0.5rem;
-  }
+.container1 .mediabox {
+  width: 40%;
+  height: auto;
+  flex-shrink: 1;
 }
 
 
-
-/* Learn Something - >480px mobile */
-
-
-
-
-
-/* Keep Practicing Section */
-
+/* keep practicing */
 .container2{
-  width: 100%;
-  max-width:1000px ;
-  margin: 2rem 0 0 0;
-  padding:0;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+
+}
+
+.container2 .featurebox{
+  display: flex;
+  width: 59%;
+  margin: 1rem 1rem 0 1rem;
+  flex-direction: column;
+}
+
+.sidebox{
+  width: 39%;
   display: flex;
   flex-direction: column;
-
 }
-.container2a{
-  margin: 0;
-  padding:0;
+
+.container2 .mediabox{
+  width: 90%;
+  margin: 1rem 0 1rem 0;
   display: flex;
-  flex-direction: row;
-
-
-}
-.container2aleft{
-  width: 60%;
-  margin: 32px 24px;
-}
-.container2aright{
-  width:40%;
-  margin: 1rem 0 0 0;
-  padding: 0;
 
 }
 
-
-
-.container2aleft img{
-  width: 100%;
-  margin: 0;
-  padding: 0;
-
-
-}
-
-.eventbox{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: auto;
-  margin:0;
-  padding: 0;
-
-
-
-
-
-}
-
-.eventbox img{
-  width: 35%;
-  height: 100%;
-  padding:0;
-  margin: 16px;
-}
-
-.eventbox .mobileimg{
-  display: none;
-}
-.textbox a{
-
-
-}
-
-/* Keep Practicing >480px mobile */
-
-@media screen and (max-width: 480px){
-
-  .container2aleft{
-    display: none;
-  }
-
-  .container2{
-    width: 100%;
-    margin: 8rem 0 0 0;
-    padding: 0;
-
-
-  }
-  .container2a{
-    margin: 0;
-    padding:0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .container2a p{
-    display: none;
-  }
-  .container2aright .textbox{
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    width: 80%;
-    background-color: rgba(35 , 39 , 72 , 0.8);
-    padding: 8px 0 8px 0;
-
-
-
-  }
-  .container2aright .textbox h4{
-      color: #e98074;
-      font-size: 1.2rem;
-      padding: 0;
-      margin: 0;
-  }
-
-
-
-
-  .container2aright{
-    width:100%;
-    margin: 16px 16px 64px 16px;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .container2aleft img{
-    width: 100%;
-
-
-
-  }
-
-  .eventbox{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    border: none;
-    margin: 16px 16px 64px 16px;
-
-  }
-
-  .eventbox img{
-    width: 100%;
-    height: auto;
-  }
-
-  .eventbox .mobileimg{
-    display: block;
-  }
-  .eventbox .desktopimg{
-    display: none;
-  }
-}
-
-
-/* Start Learning Section */
-
-.container3a h1{
-  width: ;
-  margin: 0 20rem;
-  padding: 2rem 0;
-  font-weight: bold;
-  color: #E85A4F;
-}
-
-.container3{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 1000px;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
-  margin: 5rem 0 0 0;
-}
-
-.container3 #startlearning{
-  width:100%;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin:0;
-  font-weight: bold;
-}
-
-.coursebox{
-  width: 29%;
-  height: auto;
-  display: flex;
-  text-align: left;
-  flex-direction: column;
-  margin: 0 20px 20px 20px;
-  padding-bottom: 24px;
-
-}
-.coursebox img{
-  width: 100%;
-  height: auto;
-
-}
-.coursebox h4 , h5 , p{
-  padding: 0;
-  margin: 0.5rem 0;
-
-}
-#startlearning{
-  display: flex;
-  align-items: flex-start;
-}
-
-
-
-
-
-
-
-
-
-/* Start Learning >480px mobile */
-@media screen and (max-width:480px){
-  .container3 .coursebox .desktop{
-    display: none;
-  }
-
-  .container3 .coursebox{
-    background-color: #d8c3a5;
-    width: 90%;
-    margin: 1rem 1rem 0 1rem;
-    padding: 0 0 0 0;
-
-  }
-
-  .container3 .coursebox h4{
-    margin-left:1rem;
-  }
-
-
-  .container3 .coursebox img{
-    display: none;
-  }
-
-  .container3{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-content: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-  }
-
-}
-
-
-/* Thesis section */
-.container4{
-  width: 100%;
-  max-width: 1000px;
-  margin: 5rem 0 0 0;
-  padding:0;
-  display: block;
-}
-.container4a{
-  margin: 0;
-  padding:0;
-  display: flex;
-  flex-direction: row;
-
-}
-.container4 h1{
-  width: 100%;
-  text-align: center;
-  margin: 2rem 0;
-
-
-}
-
-.container4aleft h1{
-  width: 100%;
-  text-align: left;
-  margin: 32px 0;
-}
-
-.container4aleft{
-  width: 60%;
-  margin: 32px 24px;
-}
-.container4aright{
-  width:40%;
-  margin: 15px 0 0 0;
-  padding: 0;
-}
-
-.container4aleft video{
-  width: 100%;
-  height: auto;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-
-}
-.container4aleft h1 , p{
-  padding: 0;
-  margin: 0;
-}
-.container4aleft h1{
-
-  margin: 24px 0 8px 0;
-}
-.container4aleft p{
-
-  margin: 0 0 32px 0;
-
-}
-
-.container4aright .eventbox{
-  padding-bottom: 1.08px;
-}
-
-.container4aright .textbox h4{
-
-
-}
-.container4aright .textbox p{
-
-}
-
-.container4aright .textbox a{
-
-  font-weight: bold;
-  text-decoration: none;
-}
-
-footer{
-  width: 100%;
-  max-width: 1000px;
-
-}
-footer p{
-  margin-left: 1.5rem;
-}
-
-
-/* Thesis mobile section */
-@media screen and (max-width: 480px){
-  .container4aright{
-    display: none;
-  }
-
-  .container4aleft{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-
-  }
-  .container4{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 0 2rem 0;
-
-  }
-  .container4aleft video{
-    width: 100%;
-    height: auto;
-    padding: 0;
-    margin: 0;
-  }
-  .container4aleft p , .container4aleft h2 {
-    display: none;
-  }
-  footer{
-    margin: 0 0 2rem 0;
-  }
+.container2 .mediabox .desktopimg{
+  height: 60%;
+  width: auto;
 
 }
